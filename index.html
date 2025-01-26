@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<style>
+  
+       
+</style>
+<body>
+ 
+      <!--header-->
+ <div class="header">
+  <div class="mkcl-image">
+  <img src="mkcllogo.jfif" alt="mkcllogo" class="mkcl-logo">
+</div>
+  <div class="conten">
+      <div class="form-pooj">
+     <div class="form">
+         Application Form
+     </div>
+     </div>
+     <div class="title">
+                 <div class="all-title">  <p class="title-a">Please fill in the fotm in English and CAPITAL letters only.<br></p>
+       <p class="titel-b"> All fields marked with <sup class="super">*</sup> are MANDATORY. Tick the appropriate bracket.
+        <input type="checkbox"  class="in-b"></p></div>
+     </div>
+  </div>
+  <div class="form-number-date">
+    <div class="date">
+      <div class="form-a"><pre>Form No:</pre></div> 
+       <div class="form-b"><input type="text" placeholder="L3328381" maxlength="8"></div>
+        </div>
+        <div class="date-d">
+            <label for="Date">
+                <div class="dob-inputs">
+                    <p>Date :</p> 
+                  <div class="dob-group" style="margin-left: 1px;">
+                    <input type="text" placeholder="D" maxlength="1">
+                  </div>
+                  <div class="dob-group">
+                    <input type="text" placeholder="D" maxlength="1">
+                  </div>  
+                  <div class="dob-group">
+                    <input type="text" placeholder="M" maxlength="1">
+                  </div>
+                  <div class="dob-group">
+                    <input type="text"  placeholder="M" maxlength="1">
+                  </div> 
+                  <div class="dob-group">
+                    <input type="text" placeholder="Y" maxlength="1">
+                  </div>
+                  <div class="dob-group">
+                    <input type="text"  placeholder="Y" maxlength="1">
+                  </div>
+                  <div class="dob-group">
+                    <input type="text"  placeholder="Y" maxlength="1">
+                  </div>
+                  <div class="dob-group">
+                    <input type="text"  placeholder="Y" maxlength="1">
+                  </div>
+                </div>
+             </label>
+            </div> 
+           </div>
+    
+ </div>
+ <div class="block">
+     <P>To be filled in by the Applicant only</P>
+ </div>
+
+   <div class="top-contener">
+       <div class="msbox">
+           <img src="logomscit.png" alt="MS-CIT logo" class="msl">
+   
+                 <div class="checkbox-container">
+                       <label>
+                           <input type="checkbox" class="in-b">
+                           School Readiness
+                       </label>
+                       <label>
+                           <input type="checkbox" class="in-b">
+                           IT Awareness
+                       </label>
+                       <label>
+                           <input type="checkbox" class="in-b">
+                           Job Readiness
+                       </label>
+                   </div>
+                   
+             </div>
+       <div class="mkcl">
+           <input type="checkbox" class="in-b" id="check-a">
+           <div class="bord">
+               <img src="klic-a.png" alt="mkcl1" class="klic-image">
+           </div>
+         
+       </div>
+       <div class="mkcl">
+           <input type="checkbox" class="in-b" id="check-a">
+           <div class="bord">
+           <img src="mkcl-logo.jpg" alt="mkcl2" class="klic-image">
+           </div>
+       </div>
+   
+       <div class="mkcl" style="border: none;">
+           <input type="checkbox" class="in-b" id="check-a">
+           <div class="bord">
+           <img src="mkcl-mastr.jpg" alt="mkcl3" class="klic-image">
+           </div>
+       </div>
+   </div>
+ 
+           <!--  SECOND  CONTAINER  -->
+
+<div class="second-container">
+<div class="form-container">
+    <div class="image-container-left">
+        <img src="identificaton.jpg" alt="notepad" class="notepad">
+    </div>
+    <div class="form-content">
+      <form>
+        <div class="form-group">
+          <label for="first-name" class="lable-containe">First Name<span class="required">*</span>:</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <div class="form-group inline">
+          <div class="half-width">
+            <label for="father-name" class="lable-containe">Father Name:</label>
+            <input type="text" id="father-name" name="father-name">
+          </div>
+          <div class="half-width">
+            <label for="mother-name" class="lable-containe">Mother Name:</label>
+            <input type="text" id="mother-name" name="mother-name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="surname" class="lable-containe">Surname<span class="required">*</span>:</label>
+          <input type="text" class="surname" name="surname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="applicant-name" class="lable-containe">Name of the applicant as it should appear on the Fee Receipt, Hall Ticket, and Final Certificate<span class="required">*</span>:</label>
+          <input type="text" id="applicant-name" name="applicant-name" required>
+        </div>
+      </form>
+    </div>
+    <div class="image-container-right">
+    <!-- img tag with default image -->
+    <img id="image-preview" src="main-photo.jpg" alt="Click to upload" onclick="document.getElementById('file-input').click()">
+    <input type="file" id="file-input" accept="image/*" style="display: none;" onchange="showPreview(event)">
+          </div>
+        </div>
+      </div>
+             
+                 <!--      Third CONTAINER         -->
+
+<div class="three-container">
+    <div class="calender">
+        <img src="callender-a.jpg" alt="" class="calender-image">
+    </div>
+    <div class="dob-parrent">
+    <div class="dob-container">
+        <h3>Date of Birth<sup>*</sup>:</h3>
+        <div class="dob-inputs">
+          <!-- Day Group -->
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>D</span>
+          </div>
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>D</span>
+          </div>
+          
+          <!-- Space Between Groups -->
+          <div style="width: 10px;"></div>
+          
+          <!-- Month Group -->
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>M</span>
+          </div>
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>M</span>
+          </div>
+          
+          <!-- Space Between Groups -->
+          <div style="width: 10px;"></div>
+          
+          <!-- Year Group -->
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>Y</span>
+          </div>
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>Y</span>
+          </div>
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>Y</span>
+          </div>
+          <div class="dob-group">
+            <input type="text" maxlength="1">
+            <span>Y</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!--      Gender           -->
+    <div class="parrent-gm">
+    <div class="gender">
+    <div class="gender-mf">
+      <div class="gender-a">
+        <img src="gender-image.jpg" alt="gender" class="gender-image">
+      </div>
+      <div class="box-title">
+      <div class="m-status">Gender<sup>*</sup>:</div>
+      <label for="gender">
+        <p>Male</p> <input type="checkbox" id="male" onclick="checkOnlyOne(this, ['female', 'transgender'])" class="ab"> 
+      </label>
+      <label for="gender" class="date-a">
+        <p>Female</p> <input type="checkbox" id="female" onclick="checkOnlyOne(this, ['male', 'transgender'])" class="ab"> 
+      </label>
+      <label for="gender" class="date-a">
+        <p>Transgender</p> <input type="checkbox" id="transgender" onclick="checkOnlyOne(this, ['male', 'female'])" class="ab"> 
+      </label>
+     
+     
+    </div>
+  </div>
+  </div>
+     <!--      Marital           -->
+
+    <div class="marital">
+    <div class="gender-mf">
+      <div class="gender-a">
+        <img src="Ring.jpg" alt="gender" class="gender-image">
+      </div>
+      <div class="box-title">
+      <div class="m-status">Marial Status<sup>*</sup>:</div>
+      <label for="marital-sm">
+        <p>Single</p><input type="checkbox" id="Single" onclick="checkOnlyOne(this, ['Married'])" class="ab">
+      </label>
+      <label for="marital" class="date-a">
+        <p>Married</p><input type="checkbox" id="Married" onclick="checkOnlyOne(this, ['Single'])" class="ab">
+      </label>
+    </div>
+  </div>
+</div>
+  </div>
+   </div>
+         <!--       Mobail & Adhar         -->
+
+      <div class="forth-container">
+        <div class="mobil">
+          <img src="smartphone-a.jpg" alt="smartphone" class="mobail-image">
+        </div>
+      <div class="mo-nu">
+        <div class="dob-container-m">
+          <h4>Mobaile No. (Own)<sup>*</sup>:</h4>
+          <div class="dob-inputs-m">
+            <!-- Day Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+                <!-- Month Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+                <!-- Year Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+          </div>
+        </div>
+        <div class="mo-nu" style="width: 100%;">
+          <div class="dob-container-m">
+            <h4>Mobaile No.(Other)<sup>*</sup>:</h4>
+            <div class="dob-inputs-m">
+              <!-- Day Group -->
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+                  <!-- Month Group -->
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+                 <!-- Year Group -->
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+              <div class="dob-group-m">
+                <input type="text" maxlength="1">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+                  <!--        Mother Tongue          -->
+            <div class="m-a">
+            <div class="mother-tongue">
+            <div class="speaking-man">
+              <img src="speaking-man.jpg" alt="speaking a man" class="speaking-image">
+            </div>
+            
+             <div class="mother-title"><div class="mother-p"><p><h4>Mother Tongue</h4><sup>*</sup>:</p></div> 
+             <input type="text" class="mother-input" style=" padding-left: 5px;"></div>
+          </div>
+ 
+                   <!--        Adhar Card          -->
+
+          <div class="adhar-card">
+             <div class="img-adhar">
+              <img src="adhar.png" alt="adhaar-card" class="adhar-image">
+            </div>
+              <div class="dob-container-m" style="margin: 10px;">
+                <h4>Aadhaar Numer<sup>*</sup>:</h4>
+                <div class="dob-inputs-m" style="margin: 0;">
+                  <!-- Day Group -->
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                      <!-- Month Group -->
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                     <!-- Year Group -->
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                  <div class="dob-group-a">
+                    <input type="text" maxlength="1">
+                  </div>
+                </div>
+                </div>
+                </div> 
+                </div>
+                </div>       
+    <!--       Fifth-Container      -->
+              
+  <div class="five-container">
+    <div class="addres-im">
+      <img src="home loca.jfif" alt="home" class="addres-image">
+    </div>
+    
+    <div class="all-parrent-five">
+
+    <div class="contenr-a-five">
+    <div class="title-five">
+    <h4>Address for Correspondence:</h4>
+    </div>
+   
+    <div class="address-a">
+    <label for="house" class="lable-address-a">House No/ Building No <sup>*</sup>: <input type="text"></label>
+    <label for="house" class="lable-address-b">City/Village/Suburb <sup>*</sup>: <input type="text"></label>
+    <label for="house" class="lable-address-c">District <sup>*</sup>: <input type="text"></label>
+    </div>
+    </div>
+    
+    <div class="contenr-b-five">
+      <div class="address-b">
+      <label for="house" class="lable-address-ba">Street/Colony <sup>*</sup>: <input type="text"></label>
+      <label for="house" class="lable-address-bb">Tehsil/Block <sup>*</sup>: <input type="text"></label>
+      
+       <div class="pin-code">Pin Code <sup>*</sup>:
+
+         <div class="dob-inputs">
+     
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+        <div class="dob-group">
+          <input type="text" maxlength="1">
+        </div>
+      </div> 
+       </div>
+      </div>
+      </div>
+    </div>
+</div>
+</div>          
+          
+            
+       <!--       Container Six         -->
+ 
+       <div class="container-six">
+        <div class="container-image">
+          <img src="collage study-a.jpg" alt="home" class="image-container">
+        </div>
+       <div class="all-parrent-six">
+      
+        <div class="title-six">
+        <h4 class="titel-six-t">Educational Qqalification<sup>*</sup>: (What do you do?)</h4>
+    </div>
+
+    <div class="abc-parrent">
+      <div class="abc-id">
+      <h4 class="abc-id-a">ABC ID:</h4>
+          <div class="dob-inputs-m">
+            <!-- Day Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+                <!-- Month Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+               <!-- Year Group -->
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+            <div class="dob-group-m">
+              <input type="text" maxlength="1">
+            </div>
+          </div>
+           </div>
+           </div>
+         
+         
+
+          <!--         Student-First-Row          -->
+
+        <div class="students-first-row">
+          <h3 class="studet-title">Student:</h3>
+
+          <div class="dob-parrent-r">
+                <div class="dob-inputs-r">
+                  <!-- Day Group -->
+                  <div class="dob-group-r">
+                    
+                    <span>1<sup>st </sup>- 4 <sup>th</sup>Std.</span>
+                    <input type="checkbox">
+                  
+                  <div class="dob-group-r">
+                    <span>5<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> <div class="dob-group-r">
+                    <span>6<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> <div class="dob-group-r">
+                    <span>7<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> <div class="dob-group-r">
+                    <span>8<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> <div class="dob-group-r">
+                    <span>9<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> <div class="dob-group-r">
+                    <span>10<sup>th</sup> Std.</span>
+                    <input type="checkbox">
+                  </div> 
+                </div>
+                </div>
+                 <!--          DIVR             -->
+                  <div class="divr">
+                    <div class="dob-group-r">
+                      <span>11<sup>th</sup> Std.</span>
+                      <input type="checkbox">
+                    </div>
+                    <div class="dob-group-r">
+                      <span>12<sup>th</sup> Std.</span>
+                      <input type="checkbox">
+                    </div> 
+                    <div class="dob-group-r">
+                      <span>Diplima</span>
+                      <input type="checkbox">
+                    </div>
+                    <div class="dob-group-r">
+                      <span>FY to TY</span>
+                      <input type="checkbox">
+                    </div>
+                    <div class="dob-group-r">
+                      <span>Graduate</span>
+                      <input type="checkbox">
+                    </div>
+                    <div class="dob-group-r">
+                      <p>Post Graduate</p>
+                      <input type="checkbox">
+                    </div>
+                    <div class="dob-group-r" style="margin-left: -3px;">
+                      <span>Other</span>
+                      <input type="checkbox">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+    </div>
+       </div>
+             <!--            Container-Seven             -->  
+       
+             <table align="center">
+              <tr class="table-image-tr">
+                <td align="center" rowspan="4"  class="table-image-td">
+                <img src="licence.jfif" width="60px" height="80px" class="image-table">
+                </td>
+                <td colspan="6" style="text-align: start;">
+               <h4>Current Profile of Applicant<sup>*</sup>:</h4> 
+                </td>
+                </tr>
+                <tr>
+                <td style=" padding-bottom: 13px; padding-top: 5px;">
+                <p>School student</p><input type="checkbox" name="school student">
+                </td>
+                <td>
+               <p> Collegian</p><input type="checkbox" name="Collegian">
+                </td>
+                <td>
+                <p>Teacher</p><input type="checkbox" name="Teacher">
+                </td>
+                <td>
+                <p>Employee</p><input type="checkbox" name="Employee">
+                </td>
+                <td>
+               <p>Housewife</p><input type="checkbox" name="Housewife">
+                </td>
+                <td>
+                <p>Industrial Worker</p><input type="checkbox" name="Industrial Worker" class="mt-l">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Unemployed</p><input type="checkbox" name="Unemployed">
+                </td>
+                <td>
+                  <p>Retired</p><input type="checkbox" name="Retired">
+                </td>
+                <td>
+                  <p>Farmer</p><input type="checkbox" name="Farmer">
+                </td>
+               
+                <td colspan="2">
+                  <p>Building Construction Worker</p><input type="checkbox" name="Building Construction Worker">
+                </td>
+              
+                <td>
+                  <p class="gov-table">Gov./Semi Gov.<br>Employee</p><input type="checkbox" name="Gov./Semi Gov. Employee" class="gov-table-input" id="mlt">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Self-Employeed</p><input type="checkbox" name="Self-Employeed">
+                </td>
+                <td>
+                  <p>Senior Citizen</p><input type="checkbox" name="Senior Citizen">
+                </td>
+                
+                <td>       
+                  <p>Trader</p><input type="checkbox" name="Trader">
+                </td>
+               
+                <td colspan="2">
+                  <p class="gov-table"> Applicant of
+                Competitive Exams<br>(such as MPSC/UPSC...)</p><input type="checkbox" name="Applicant of Competitive Exams"  class="gov-table-input">
+                </td>
+              
+                <td>
+                  <p> Other</p><input type="checkbox" name="Other" class="mt-l">
+                </td>
+                </tr>
+                </tr>
+            </table>
+
+        <!---      Container Eaight       -->
+
+        <div class="container-eaight">
+
+          <div class="img-eaight"> 
+              <img src="handicaped.png" alt="handicaped-image" class="image-eaight">
+          </div>
+  
+               <div class="parrent-eaight">
+  
+        <div class="diver-eaigh">
+          <p class="eaight-title">Are you Physically Challenged ?<sup>*</sup>:</p>
+          <div class="dob-group-r">
+              <p>No</p>
+              <input type="checkbox" id="No" onclick="checkOnlyOne(this, ['Yes'])">
+            </div>
+            <div class="dob-group-r">
+              <p>Yes</p>
+              <input type="checkbox" id="Yes" onclick="checkOnlyOne(this, ['No'])">
+            </div>
+      </div>
+      <div class="nature-disab">
+          <label for="text">
+          Nature of Disability: <input type="text" class="in-b">
+          </label>
+          </div>
+         
+          </div>
+      </div>
+    <!--       Container Ninth         -->
+ 
+    <div class="container-ninth">
+      <div class="container-image">
+        <img src="id.jfif" alt="home" class="image-container">
+      </div>
+     <div class="all-parrent">
+    
+      <div class="title-six">
+      <p class="titel-six-t">Proof of Identity (Photocopy)<sup>*</sup>:</p>
+  </div>
+
+  <div class="abc-parrent">
+
+    <label for="School">
+      <p>School/Collage ID</p>
+      <input type="checkbox">
+  
+    </label>
+    <label for="Voter-id">
+      <p>Voter ID</p>
+      <input type="checkbox">
+   
+    </label>
+    <label for="Passport">
+      <p>Passport</p>
+      <input type="checkbox">
+  
+    </label>
+    <label for="License">
+      <p>License</p>
+      <input type="checkbox">
+ 
+    </label>
+    <label for="Aadhaar-card">
+      <p>Aadhaar Card</p>
+      <input type="checkbox">
+    </label>
+       
+     </div>      
+
+        <!--         Student-First-Row          -->
+
+      <div class="row-two">
+        
+         <div class="declaration">
+          <div class="big-box">
+            <p><b>Declaration by Applicant:</b>
+              I/we hereby solemnly affirm that my name, photograph and signature on this
+              application form matches with the copy of "proof of identity" attached herewith by me. I undertake to carry this proof in person at the time of appearing for final online examination. I have read and understood the information about course and instructions given on www.mkcl.org and I will abide by them.
+            </p>
+          </div>
+        <!-- First Signature Section -->
+<div class="clickable-div" id="clickableDiv1">
+  <div class="signature-label">
+    <p>Signature of Applicant<sup>*</sup></p>
+  </div>
+  <div class="signature-placeholder" id="placeholder1">
+    <!-- Placeholder for signature image -->
+  </div>
+ 
+</div>
+
+<div class="modal" id="signatureModal1">
+  <div class="modal-content">
+    <h3>Sign Here</h3>
+    <canvas id="signatureCanvas1" width="300" height="100"></canvas>
+    <button onclick="saveSignature('placeholder1', 'signatureModal1', 'signatureCanvas1')">Save</button>
+    <button onclick="clearCanvas('signatureCanvas1')">Clear</button>
+    <button onclick="closeModal('signatureModal1')">Cancel</button>
+  </div>
+</div>
+
+<!-- Second Signature Section -->
+<div class="clickable-div" id="clickableDiv2">
+  <div class="signature-label">
+    <p>Parent/Guardians Signature<sup>*</sup></p>
+    <p class="sign-c">(in case of Applicant is Minor)</p>
+  </div>  
+  <div class="signature-placeholder" id="placeholder2">
+    <!-- Placeholder for signature image -->
+  </div>
+  
+</div>
+
+<div class="modal" id="signatureModal2">
+  <div class="modal-content">
+    <h3>Sign Here</h3>
+    <canvas id="signatureCanvas2" width="300" height="100"></canvas>
+    <button onclick="saveSignature('placeholder2', 'signatureModal2', 'signatureCanvas2')">Save</button>
+    <button onclick="clearCanvas('signatureCanvas2')">Clear</button>
+    <button onclick="closeModal('signatureModal2')">Cancel</button>
+  </div>
+</div>
+         </div>
+     
+                </div>
+              </div>
+            </div>
+  </div>
+    </div>
+      </div>
+
+      <script src="index.js">
+      
+      </script>
+
+</body>
+</html>
+
+
+
